@@ -295,7 +295,7 @@ textarea{
 
 @media screen and (max-width: 1000px) {
     #profile-photo  {
-      height: 280px;
+      height: 480px;
       width: 100%;
       border-bottom-left-radius: 0;
       border-top-right-radius: 30px;
