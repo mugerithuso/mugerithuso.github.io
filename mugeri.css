@@ -1,0 +1,417 @@
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: 2px;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;scrollbar-width: 2px;
+    
+    
+}
+@font-face {
+    font-family:myfont ;
+    src: url(Nosifer-Regular.ttf);
+}
+.hearder{
+    background: #ffffffaf;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position:absolute;
+
+    
+
+}
+#hearding{
+     position:absolute;
+     font-family: myfont;
+     left: 28px;
+     margin: 0;
+     padding: 0;
+     
+  
+}
+#manue{
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    list-style: none;
+    gap: 20px;
+    right: 90px;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+    
+   
+}
+li{
+    
+    position: relative;
+    
+}
+li::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    transition:transform 0.6s;
+    transform:scaleX(0);
+    transform-origin: center;
+    left: 0;
+    bottom: 0%;
+    background: linear-gradient(90deg, #8A1A93, #22CED4);
+          background-size: 400% 400%;
+          animation: GradientBackground 1s ease infinite;
+
+    
+    
+   
+    
+}
+li:hover::after{
+    transform: scaleX(1);
+    text-decoration: underline;
+    transform-origin: center;
+
+    
+   
+}
+     
+
+        @keyframes GradientBackground {
+          0% {
+            background-position: 0% 50%;
+          }
+
+          50% {
+            background-position: 100% 50%;
+          }
+
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+      
+
+#back-image{
+    width: 100%;
+    height: 650px;
+    z-index: -1;
+    image-rendering: optimizeSpeed;
+    position: relative;
+    top: 0;
+}
+#motivation{
+    position: absolute;
+    width: 40%;
+    min-height: 192px;
+    max-height: 290px;
+    overflow: hidden;
+    top: 250px;
+    left: 50px;
+    color: #ffff;
+    font-size: 24px;
+    background-color: #79757563;
+}
+#hire-me{
+    position: absolute;
+    width: 97px;
+    height: 40px;
+    background-color: rgb(5, 151, 151);
+    color: rgb(252, 252, 252);
+    border-radius: 7px;
+    left: 110px;
+    top: 530px;
+    animation: changeColor 3s infinite 1s;
+    
+}
+#blog{
+    width: 86%;
+    height: 380px;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    align-self: center;
+    margin-top: 12px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.63);
+    
+}
+#profile{
+    
+    height:inherit;
+   
+}
+#profile-photo{
+    width: 100%;
+    height:inherit;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+#cover{
+    
+    background-color: rgba(243, 243, 239, 0.253);
+    border-color: black;
+    height: inherit;
+    text-align: center;
+    overflow: hidden;
+    
+}
+#services-box{
+    width: 100%;
+    min-height: 430px;
+    max-height: fit-content;
+    background-color: rgb(49, 131, 131);
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+}
+#services-h2{
+    color: #000;
+    text-align: center;
+    text-shadow: 6px 4px 4px rgba(255, 255, 255, 0.836);
+    font-family: Nova Cut;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 138.889% */
+    letter-spacing: 10.8px;
+}
+.service{
+    width: 176px;
+    height: 210px;
+    border-radius: 15px;
+    display: flex;
+}
+#cards{
+    gap: 15px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}  
+.image{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    image-rendering:optimizeSpeed; 
+   
+}
+.image:hover{
+    height: 290px;
+    width: 220px;
+    position: absolute;
+    border-radius: 0%;
+    align-self: center;
+    justify-self: center;
+    
+    
+}
+#footer{
+    background-color: #2c2c2c;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #b1acac;
+    text-decoration:wavy;
+
+    
+    
+}
+
+
+@keyframes changeColor {
+    0% {
+      background-color: #a88d28;
+    }
+    50% {
+      background-color: #60DA4C;
+    }
+    100% {
+      background-color: #005780;
+    }
+  }
+  #form{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    
+
+  }
+.feedback{
+    align-content: center;
+    justify-content: center; 
+    display: flex;
+    align-self: center;
+    
+    width: 50%;
+    flex-direction: column;
+}
+input,textarea{
+margin-bottom: 12px;
+height: 30px;
+border: #ffffff 4px solid;
+background-color: aliceblue;
+box-shadow: #b1acac 4px 4px 6px;
+border-radius: 10px;
+
+}
+textarea{
+    resize: none;
+    color: #000;
+    min-height: 160px;
+    max-height:max-content;
+    padding: 5px;
+}
+#post{
+    width: min-content;
+    background-color: none;
+    box-shadow: none;
+
+}
+
+#icon{
+    display: none;
+
+}
+#submit{
+    width: 90px;
+    background-color: #005780;
+    border: none;
+    color: #ffffff;
+}
+#submit:active{
+    color: #000000;
+    background-color: #417e38;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    #profile-photo  {
+      height: 280px;
+      width: 100%;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 30px;
+      align-self: flex-start;
+      justify-self: center;
+    }
+    .drop{
+        width: 0;
+        height: 300px;
+        background-color: #0f6292;
+        position: absolute;
+        z-index: 30;
+        top: 14px;
+        border-radius: 16px;
+        transition: 0.5s;
+        overflow-x: hidden;
+        align-content: center;
+        display: flex;
+        list-style: none;
+        gap: 34px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        cursor: pointer;
+        justify-content: center;
+        align-items: flex-start;
+        
+        
+        
+        
+
+    }
+    .close-manu{
+        display: list-item;
+        color: whitesmoke;
+        row-gap: 10px;
+        background-color: #ffffff00;
+        border: none;
+
+        
+        
+    }
+    #hire-me{
+        position: absolute;
+        width: 70px;
+        height: 30px;
+        background-color: rgb(5, 151, 151);
+        color: rgb(252, 252, 252);
+        border-radius: 7px;
+        left: 110px;
+        top: 570px;
+        animation: changeColor 5s infinite 1s;
+        
+    }
+    #blog{
+        height: fit-content;
+        display: block;
+        box-shadow: 3px 3px 30px 4px rgba(0, 0, 0, 0.63);
+    }
+    #blog p{
+        padding: 5px;
+    }
+    #motivation{
+        width: 96%;
+        height: fit-content;
+        left: 4px;
+        padding: 0%;
+    }
+    #icon{
+        display: block;
+        align-self: center;
+        position: absolute;
+        right: 5px;
+        background-color:transparent;
+        border: none;
+        margin: 0%;
+        padding: 0%;
+        align-content: center;
+        justify-content: center;
+        
+    }
+    #icon ul{
+        display: list-item;
+        position: absolute;
+    }
+    
+    .material-symbols-outlined {
+        
+    font-variation-settings:
+    'FILL' 14,
+    'wght' 400,
+    'GRAD' 19,
+    'opsz' 24
+    }
+    #manue{
+        display: none;
+    }
+    .feedback{
+        width: 94%;
+        text-align: center;
+
+    }
+    .close{
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        top: 20px;
+        position: absolute;
+        color: #ffffff;
+        left: 20px;
+
+    }
+  
+    
+    
+    
+
+
+  }
