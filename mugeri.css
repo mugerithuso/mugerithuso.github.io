@@ -339,8 +339,8 @@ textarea{
     }
     #hire-me{
         position: absolute;
-        width: 70px;
-        height: 30px;
+        width: 120px;
+        height: 90px;
         background-color: rgb(5, 151, 151);
         color: rgb(252, 252, 252);
         border-radius: 7px;
