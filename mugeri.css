@@ -297,7 +297,7 @@ textarea{
 .hearder {
         background: #ffffffaf;
         width: 100%;
-        height: 95px;
+        height: 150px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -308,7 +308,7 @@ textarea{
     #hearding {
         position: absolute;
         font-family: myfont;
-        font-size: 60px;
+        font-size: 100px;
         left: 28px;
         margin: 0;
         padding: 0;
