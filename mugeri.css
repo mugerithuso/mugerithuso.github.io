@@ -264,7 +264,7 @@ textarea {
 
   .hearder {
     width: 100%;
-    height: 70px;
+    height: 1500px;
     display: flex;
     flex-shrink: 0;
     margin-bottom: 10px;
@@ -280,7 +280,7 @@ textarea {
   #hearding {
     width: 168px;
     height: 31px;
-    font-size:x-large;
+    font-size:80px;
     align-self: center;
     font-family: myfont;
     
