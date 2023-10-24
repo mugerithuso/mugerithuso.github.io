@@ -1,130 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="mugeri thuso Collen"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>vhageri</title>
+    <link rel="stylesheet" href="mugeri.css" />
+    <script src="vhageri.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,00,0,0"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="mugeri thuso Collen" content="width=device-width, initial-scale=1.0" />
-  <title>vhageri</title>
-  <link rel="stylesheet" href="mugeri.css" />
-  <script src="vhageri.js"></script>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,00,0,0" /></head>
+  <body>
+    <div class="hearder">
+      <h1 id="hearding">vhageri</h1>
+      <ul id="manue">
+        <li><a href="" on onclick="scrool('services-box')">SERVICES</a></li>
+        <li>BLOG</li>
+        <li>CONTACTS</li>
+      </ul>
+      <button class="material-symbols-outlined" id="icon" onclick="openManu()">
+        menu
+      </button>
+      <div id="drower" class="drop">
+        <button class="close" onclick="closeManu()">
+          <span class="material-symbols-outlined"> close </span>
+        </button>
 
-<body>
-  <div class="hearder">
-    <h1 id="hearding">vhageri</h1>
-    <ul id="manue">
-      <li> <a href="" on onclick="scrool('services-box')">SERVICES</a></li>
-      <li>BLOG</li>
-      <li>CONTACTS</li>
-    </ul>
-    <button class="material-symbols-outlined" id="icon" onclick="openManu()">
-      menu
-    </button>
-    <div id="drower" class="drop">
-      <button class="close" onclick="closeManu()">
-        <span class="material-symbols-outlined">
-        close
-        </span>
-      </button>
-
-      <button class="close-manu" id="mini-blog" onclick="scrool('blog')">
-        BLOG
-      </button>
-      <button class="close-manu" onclick="scrool('services-box')">
-        SERVICES
-      </button>
-      <button class="close-manu" onclick="scrool('form')">
-        CONTACTS
-      </button>
-
+        <button class="close-manu" id="mini-blog" onclick="scrool('blog')">
+          BLOG
+        </button>
+        <button class="close-manu" onclick="scrool('services-box')">
+          SERVICES
+        </button>
+        <button class="close-manu" onclick="scrool('form')">CONTACTS</button>
+      </div>
     </div>
-  </div>
-  <div id="web-body">
-    <img src="pexels-pixabay-39284.jpg" alt="" id="back-image" />
-    <div id="motivation">
+    <div id="web-body">
+      <img src="pexels-pixabay-39284.jpg" alt="" id="back-image" />
+      <div id="motivation">
+        <p>
+          Programmers are the architects of the virtual world, crafting dreams
+          into reality through lines of code. We build bridges between
+          imagination and execution, constructing the future one algorithm at a
+          time, while leaving our digital footprints on the sands of innovation.
+        </p>
+      </div>
+      <button id="hire-me">hire me</button>
+    </div>
+    <div id="blog">
+      <img src="IMG_2685.JPG.jpg" alt="" id="profile-photo" />
+
       <p>
-        Programmers are the architects of the virtual world, crafting dreams
-        into reality through lines of code. We build bridges between
-        imagination and execution, constructing the future one algorithm at a
-        time, while leaving our digital footprints on the sands of innovation.
+        Hellow...! Meet <strong>Thuso Collen Mugeri</strong> , a dynamic
+        individual who wears multiple hats, seamlessly navigating the worlds of
+        <em>web and mobile app development</em> , <em>gadget repair</em> , and
+        <em>photography</em> . Whether you're in need of innovative tech
+        solutions or captivating visual storytelling, Thuso Collen Mugeri is
+        your trusted partner. Let's delve into the skills and expertise that
+        make him a standout professional in these diverse domains.
+        <br /><br />Web & Mobile App Developer With a passion for technology and
+        a deep understanding of programming languages, Thuso Collen Mugeri
+        excels as a web and mobile app developer. His ability to craft
+        user-friendly, responsive, and visually appealing websites and
+        applications has earned him a reputation for excellence in the field.
+        Whether it's building an interactive website or creating a cutting-edge
+        mobile app, Thuso Collen Mugeri's skills are your gateway to the digital
+        realm. <br /><br />In today's tech-dependent world, encountering laptop
+        or smartphone issues can be a major setback. Fortunately, Thuso Collen
+        Mugeri's expertise extends to troubleshooting and fixing these devices.
+        With a keen eye for diagnostics and a toolkit filled with solutions, he
+        can quickly identify and resolve hardware and software glitches. His
+        dedication to restoring your gadgets to their optimal condition ensures
+        you stay connected and productive. <br /><br />Beyond his technical
+        prowess, Thuso Collen Mugeri possesses a creative side as a skilled
+        photographer. He has a unique eye for capturing moments and telling
+        stories through visuals. Whether it's snapping breathtaking landscapes
+        or creating compelling portraits, his photography skills add an artistic
+        dimension to his diverse skill set. Thuso Collen Mugeri can help you
+        immortalize memories and enhance your visual storytelling.
       </p>
     </div>
-    <button id="hire-me">hire me</button>
-  </div>
-  <div id="blog">
-    <img src="IMG_2685.JPG.jpg" alt="" id="profile-photo" />
-
-    <p>
-      Hellow...! Meet <strong>Thuso Collen Mugeri</strong> , a dynamic individual who wears
-      multiple hats, seamlessly navigating the worlds of <em>web and mobile app
-        development</em> , <em>gadget repair</em> , and <em>photography</em> . Whether you're in need of
-      innovative tech solutions or captivating visual storytelling, Thuso
-      Collen Mugeri is your trusted partner. Let's delve into the skills and
-      expertise that make him a standout professional in these diverse
-      domains. <br /><br />Web & Mobile App Developer With a passion for
-      technology and a deep understanding of programming languages, Thuso
-      Collen Mugeri excels as a web and mobile app developer. His ability to
-      craft user-friendly, responsive, and visually appealing websites and
-      applications has earned him a reputation for excellence in the field.
-      Whether it's building an interactive website or creating a cutting-edge
-      mobile app, Thuso Collen Mugeri's skills are your gateway to the digital
-      realm. <br /><br />In today's tech-dependent world, encountering laptop
-      or smartphone issues can be a major setback. Fortunately, Thuso Collen
-      Mugeri's expertise extends to troubleshooting and fixing these devices.
-      With a keen eye for diagnostics and a toolkit filled with solutions, he
-      can quickly identify and resolve hardware and software glitches. His
-      dedication to restoring your gadgets to their optimal condition ensures
-      you stay connected and productive. <br /><br />Beyond his technical
-      prowess, Thuso Collen Mugeri possesses a creative side as a skilled
-      photographer. He has a unique eye for capturing moments and telling
-      stories through visuals. Whether it's snapping breathtaking landscapes
-      or creating compelling portraits, his photography skills add an artistic
-      dimension to his diverse skill set. Thuso Collen Mugeri can help you
-      immortalize memories and enhance your visual storytelling.
-    </p>
-  </div>
-  <div id="services-box">
-    <h2 id="services-h2">My services</h2>
-    <div id="cards">
-      <div class="service">
-        <img src="pexels-photomix-company-212372.jpg" alt="" class="image" /><a href="www.google.com"></a>
-      </div>
-      <div class="service">
-        <img src="pexels-negative-space-160107.jpg" alt="" class="image" /><a href=""></a>
-      </div>
-      <div class="service">
-        <img src="pexels-pixabay-236086.jpg" alt="" class="image" /><a href=""></a>
-      </div>
-      <div class="service">
-        <img src="pexels-dan-cristian-pădureț-1476321.jpg" alt="" class="image" /><a href=""></a>
-      </div>
-      <div class="service">
-        <img src="pexels-photo_2023-09-20_13-55-08.jpg" alt="" class="image" /><a href=""></a>
+    <div id="services-box">
+      <h2 id="services-h2">My services</h2>
+      <div id="cards">
+        <div class="service">
+          <img
+            src="pexels-photomix-company-212372.jpg"
+            alt=""
+            class="image"
+          /><a href="www.google.com"></a>
+        </div>
+        <div class="service">
+          <img src="pexels-negative-space-160107.jpg" alt="" class="image" /><a
+            href=""
+          ></a>
+        </div>
+        <div class="service">
+          <img src="pexels-pixabay-236086.jpg" alt="" class="image" /><a
+            href=""
+          ></a>
+        </div>
+        <div class="service">
+          <img
+            src="pexels-dan-cristian-pădureț-1476321.jpg"
+            alt=""
+            class="image"
+          /><a href=""></a>
+        </div>
+        <div class="service">
+          <img
+            src="pexels-photo_2023-09-20_13-55-08.jpg"
+            alt=""
+            class="image"
+          /><a href=""></a>
+        </div>
       </div>
     </div>
-  </div>
-  <div id="form">
-    <form action="send email" class="feedback">
-      <p>give me seed back</p>
-      Enter your name:
-      <input type="text" name="name" id="name" placeholder="name" />
-      Enter email:
-      <input type="email" name="email" id="email" placeholder="Email" />
-      Tell me what tou think sbout my work in not more than 450 charectus
-      <textarea name="" id="" cols="10" rows="10" maxlength="450"></textarea>
+    <div id="form">
+      <form action="send email" class="feedback">
+        <p>give me seed back</p>
+        Enter your name:
+        <input type="text" name="name" id="name" placeholder="name" />
+        Enter email:
+        <input type="email" name="email" id="email" placeholder="Email" />
+        Tell me what tou think sbout my work in not more than 450 charectus
+        <textarea name="" id="" cols="10" rows="10" maxlength="450"></textarea>
 
-      <input type="button" value="submit" />
-    </form>
-  </div>
-  <div id="footer">
-    
-    <p>email: <a href="https://mail.google.com/">mugerithuso@gmail.com</a></p>
-    <p>faceboolk: mugerithusoCollen</p>
-    <p>tiktok: mugeritc</p>
-  </div>
-</body>
-
+        <input type="button" value="submit" />
+      </form>
+    </div>
+    <div id="footer">
+      <p>email: <a href="https://mail.google.com/">mugerithuso@gmail.com</a></p>
+      <p>faceboolk: mugerithusoCollen</p>
+      <p>tiktok: mugeritc</p>
+    </div>
+  </body>
 </html>
