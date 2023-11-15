@@ -277,7 +277,7 @@ body{
 
   }
   .manuBar{
-    height: 20vh;
+    height: 40vh;
     width: 30vh;
     background-color: black;
     position: fixed;
@@ -287,6 +287,9 @@ body{
     display: flex;
     flex-direction: column;
     align-content: center;
+	  color:white;
+	  
+	
 
 
 
