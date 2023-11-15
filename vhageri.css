@@ -269,7 +269,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 300%;
   }
   .Half{
     width: 100%;
@@ -278,22 +278,52 @@ body{
   }
   .manuBar{
     height: 40vh;
-    width: 30vh;
+    width: 0vh;
     background-color: black;
     position: fixed;
-    right: 0px;
+    right: 12px;
     top: 7px;
+    display: none;
+    color: whitesmoke;
+
+  }
+  .manuBar ul{
     justify-content:center;
     display: flex;
     flex-direction: column;
     align-content: center;
-	  color:white;
-	  
-	
-
-
-
   }
-  
+  .manuBar ul li{
+    color: whitesmoke;
+    margin: 15px;
+  }
+  .ppcontainer{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .manuIcon{
+    position: fixed;
+    top: 16px;
+    right: 12px;
+    background-color: transparent;
+    border: none;
+  }
+  .show{
+    height: 40vh;
+    width: 30vh;
+    background-color: black;
+    position: fixed;
+    right: 12px;
+    top: 7px;
+    display: flex;
+    color: whitesmoke;
+  }
+  .card{
+    width: 98%;
+    
+  }
+
 
 }
