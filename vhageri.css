@@ -261,6 +261,9 @@ body{
     
     
 }
+.manuIcon{
+    display: none;
+}
 /********************************* mobile device******************************************/
 
 @media screen and (max-width: 800px) {
@@ -307,6 +310,7 @@ body{
     position: fixed;
     top: 16px;
     right: 12px;
+    display: block;
     background-color: transparent;
     border: none;
   }
@@ -323,6 +327,30 @@ body{
   .card{
     width: 98%;
     
+  }
+  .blog{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 14px ;
+
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+  }
+  .blogText p{
+    margin: 0px;
+    width: 100%;
+  }
+  .blogPtofile{
+    margin-bottom: 14px;
+  }
+  .blogText{
+    width: 100%;
+    margin: 0;
+    padding-bottom: 18px;
   }
 
 
