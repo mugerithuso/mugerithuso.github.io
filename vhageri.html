@@ -6,13 +6,29 @@
     <link rel="stylesheet" href="vhageri.css">
     <title>Document</title>
 </head>
-<body>
+<body onscroll="hidemanu()">
+
+
 
     <script >
       function openManu(){
                document.getElementById("manu").classList.toggle("show");
 
            }
+           /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("manu").style.top = "0";
+    
+          } else {
+            document.getElementById("manu").style.top = "-70px";
+
+          }
+          prevScrollpos = currentScrollPos;
+        }
+
                
 
     </script>
@@ -20,12 +36,12 @@
     <div class="container1" >
         <div class="Half" id="firstHalf">
             <div class="logo" id="logo">
-                <h2>welcome <br>To My <br> portfolio</h2>
+                <h2>welcome <br>To<br>My portfolio</h2>
             </div>
         </div>
         
         <div class="Half">
-            <div class="manuBar" id="manu"> 
+            <div class="manuBar" id="manu" > 
                 <ul>
                     <li>about</li>
                     <li>contact</li>
@@ -36,7 +52,7 @@
             </div>
             <div class="ppcontainer">
                 <div class="ptrofile" id="ptrofile">
-                    <img src="abstract-user-flat-4.svg" alt="profilepic">
+                    <img src="WhatsApp Image 2023-11-23 at 17.57.34.jpeg" alt="profilepic">
                 </div>
                 <div>
                     <h1>Mugeri Thuso<p>software developer</p></h1> <br>
@@ -60,7 +76,8 @@
         
         <div class="box">
             
-            <div class="blogPtofile">
+            <div class="ptrofile">
+                <img src="photo1700719769.jpeg" alt="profile" >
 
             </div>
             <div class="blogText">
@@ -161,17 +178,48 @@
         </div>
     </div>
     <div class="foot">
+        <form id="reply"> 
+            <h3>leave ma a messege </h3>
+            <p>FirstName:</p>
+            <input type="text" name="firstName" placeholder="firstName" class="formInput" id="firstName">
+            <p>Surname:</p>
+            <input type="text" name="Surname" placeholder="Surname" class="formInput" id="Surname">
+            <p>Phone Number:</p>
+            <input type="cell" name="phoneNumber" placeholder="Phone Number" class="formInput" maxlength="10" id="phoneNumber">
+            <p>Email:</p>
+            <input type="Email" name="Email" placeholder="Email" class="formInput" id="Email">
+            <p>Messege:</p>
+            <textarea class="formInput" id="messege" placeholder="messege"  placeholder="messege" id="messege"></textarea>
+            <button id="submit" name="submit">Send</button>
+            <div class="alert" id="alert"><p>your messge is submited succesfully.<br> I will get back to you if needs be....
+                <br><br> <strong>Thank you for our feedback....!</strong>
+            </p></div>
+
+            <p class="missingValueAlert" id="missing">Fill in missing all missing vallues...!!!</p>
+
+
+
+
+        </form>
+
          icons by <a target="_blank" href="https://icons8.com">Icons8</a>
          <button class="manuIcon" id="manubtn" onclick="openManu()">
             <img width="30" height="30" src="https://img.icons8.com/doodle/30/000000/menu.png" alt="menu"/>
-
         </button>
          
         <div class="links">
-            <img width="40" height="40" src="icons8-facebook.gif"/>
-            <img width="40" height="40" src="icons8-tiktok.gif"/>
-            <img width="40" height="40" src="icons8-twitter.gif"/>
-            <img width="40" height="40" src="icons8-whatsapp.gif"/>
+            <a href="https://www.facebook.com/roitwani.mudau" target="facebook">
+                <img width="40" height="40" src="icons8-facebook.gif"/>
+            </a>
+            <a href="https://www.tiktok.com/@mugeritc?is_from_webapp=1&sender_device=pc" target="tiktok">
+                <img width="40" height="40" src="icons8-tiktok.gif"/>
+            </a>
+            <a href="https://twitter.com/mugerithuso" target="twitter">
+                <img width="40" height="40" src="icons8-twitter.gif"/>
+            </a>
+            <a href="https://wa.me/qr/DP5NREXGBTZCJ1" target="whatsApp">
+                <img width="40" height="40" src="icons8-whatsapp.gif"/>
+            </a>
         </div>
 
     </div>
@@ -180,6 +228,11 @@
     
 
     </div>
+
+   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script type="text/javascript" src="vhageri.js"></script>
+
     
 </body>
 </html>
