@@ -436,7 +436,7 @@ form button{
     margin: 0;
     padding-bottom: 18px;
   }
-  #manu :: after{
+  #manu{
     top: 0;
   }
 
