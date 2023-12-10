@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="vhageri.png">
     <link rel="stylesheet" href="vhageri.css">
-    <title>Document</title>
+    <title>Vhageri</title>
 </head>
 <body onscroll="hidemanu()">
 
@@ -20,10 +21,13 @@
         window.onscroll = function() {
           var currentScrollPos = window.pageYOffset;
           if (prevScrollpos > currentScrollPos) {
-            document.querySelector(".manuBar").style.top = "0";
+            document.getElementById("manu").classList.remove("miniHide");
+            
+
     
           } else {
-            document.querySelector(".manuBar").style.top = "-70px";
+            document.getElementById("manu").classList.add("miniHide");
+            
 
           }
           prevScrollpos = currentScrollPos;
@@ -43,10 +47,10 @@
         <div class="Half">
             <div class="manuBar" id="manu" > 
                 <ul>
-                    <li>about</li>
-                    <li>contact</li>
-                    <li>eduction</li>
-                    <li>experiens</li>
+                    <li>Home</li>
+                    <li>Blog</li>
+                    <li>Skills</li>
+                    <li>FeedBlack</li>
                 </ul>
 
             </div>
@@ -179,7 +183,7 @@
     </div>
     <div class="foot">
         <form id="reply"> 
-            <h3>leave ma a messege </h3>
+            <h3>leave me a messege </h3>
             <p>FirstName:</p>
             <input type="text" name="firstName" placeholder="firstName" class="formInput" id="firstName">
             <p>Surname:</p>
