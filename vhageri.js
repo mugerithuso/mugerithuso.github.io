@@ -71,7 +71,4 @@
    })
   }
 
-  /*const getElementvale = (id) => {
-   return document.getElementById(id).value
-  }
-*/
+ 
