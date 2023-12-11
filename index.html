@@ -33,11 +33,29 @@
           prevScrollpos = currentScrollPos;
         }
 
-               
+        function gotoHome(){
+            const element = document.getElementById("Home");
+            element.scrollIntoView({behavior: "smooth"});
+        }
+        function gotoBlog(){
+            const element = document.getElementById("Blog");
+            element.scrollIntoView({behavior: "smooth"});
+        }
+        function gotoSkills(){
+            const element = document.getElementById("Skills");
+            element.scrollIntoView({behavior: "smooth"});
+        }
+        function gotoReply(){
+            const element = document.getElementById("reply");
+            element.scrollIntoView({behavior: "smooth"});
+        }     
+     
+     
+     
 
     </script>
 
-    <div class="container1" >
+    <div class="container1" id="Home" >
         <div class="Half" id="firstHalf">
             <div class="logo" id="logo">
                 <h2>welcome <br>To<br>My portfolio</h2>
@@ -47,23 +65,27 @@
         <div class="Half">
             <div class="manuBar" id="manu" > 
                 <ul>
-                    <li>Home</li>
-                    <li>Blog</li>
-                    <li>Skills</li>
-                    <li>FeedBlack</li>
+                    <li><button onclick="gotoHome()">Home</button></li>
+                    <li ><button onclick="gotoBlog()">Blog</button></li>
+                    <li><button onclick="gotoSkills()">Skills</button></li>
+                    <li><button onclick="gotoReply()">FeedBlack</button></li>
                 </ul>
 
             </div>
             <div class="ppcontainer">
                 <div class="ptrofile" id="ptrofile">
-                    <img src="WhatsApp Image 2023-11-23 at 17.57.34.jpeg" alt="profilepic">
+                    <img src="whatsapp image 2023-11-23 at 17.57.34.jpeg" alt="profilepic">
                 </div>
                 <div>
                     <h1>Mugeri Thuso<p>software developer</p></h1> <br>
                     <div class="social">
-                        <img src="317725_linkedin_social_icon.svg" alt="linkdin" class="in">
-                        <img src="4202011_email_gmail_mail_logo_social_icon.svg" alt="gmal" class="mail">
-                        <a href="TUTORIAL CHAPTER 6 AND 7.docx" download  >
+                        <a href="https://www.linkedin.com/in/thuso-collen-mugeritc/">
+                            <img src="317725_linkedin_social_icon.svg" alt="linkdin" class="in">
+                        </a>
+                        <a href="mailto:mugerithuso@gmail.com">
+                            <img src="4202011_email_gmail_mail_logo_social_icon.svg" alt="gmal" class="mail">
+                        </a>
+                        <a href="professional modern CV resume.pdf" download  >
                             <div class="downloads">Download CV </div>
                         </a>
                     </div>
@@ -76,7 +98,7 @@
 
     </div>
 
-    <div class="blog">
+    <div class="blog" id="Blog">
         
         <div class="box">
             
@@ -110,7 +132,7 @@
         </div>
 
     </div>
-    <div class="skilss">
+    <div class="skilss" id="Skills">
         <div class="card">
             <div class="head">
                <div class="skillPic">

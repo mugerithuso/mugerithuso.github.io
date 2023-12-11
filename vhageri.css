@@ -84,14 +84,16 @@ background-image: linear-gradient(to right bottom, #052555, #004e82, #007aac, #0
     cursor: pointer;
 
 }
-.manuBar ul li{
+.manuBar ul li button{
     padding: 5px;
     color: black;
     cursor: pointer;
     font-weight: bolder;
+    background-color: transparent;
+    border: none;
     
 }
-.manuBar ul li:hover{
+.manuBar ul li button:hover{
     color: rgb(81, 189, 189);
     text-decoration:line-through;
 }
@@ -111,7 +113,7 @@ background-image: linear-gradient(to right bottom, #052555, #004e82, #007aac, #0
     height: 9rem;
     width: 9rem;    
     color: #FCC209;
-    background-color: ;
+   
     border-radius: 100%;
     border-style: solid;
     border-width: 4px;
@@ -131,9 +133,7 @@ background-image: linear-gradient(to right bottom, #052555, #004e82, #007aac, #0
     font-size: 16px;
 
 }
-.social{
-    
-}   /******************** on hover animation transformation *********************/
+  /******************** on hover animation transformation *********************/
 @keyframes bounce {
 	0%, 100%, 20%, 50%, 80% {
 		-webkit-transform: translateY(0);
@@ -398,7 +398,7 @@ form h3{
     align-content: center;
     
   }
-  .manuBar ul li{
+  .manuBar ul li button{
     color: whitesmoke;
     margin: 15px;
   }
