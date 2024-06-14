@@ -13,22 +13,19 @@
 
     <script >
       function openManu(){
-               document.getElementById("manu").classList.toggle("show");
+            document.getElementById("manu").classList.toggle("show");
 
            }
-           /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
+
+  /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
           var currentScrollPos = window.pageYOffset;
           if (prevScrollpos > currentScrollPos) {
             document.getElementById("manu").classList.remove("miniHide");
-            
-
-    
+     
           } else {
             document.getElementById("manu").classList.add("miniHide");
-            
-
           }
           prevScrollpos = currentScrollPos;
         }
@@ -48,21 +45,56 @@
         function gotoReply(){
             const element = document.getElementById("reply");
             element.scrollIntoView({behavior: "smooth"});
-        }     
-     
-     
+        }  
+         
+    // clock functions
+   
+  
+    
+    
+
+  setInterval(
+    function(){
+    var d = new Date(); // Get the local time using JS
+     var seconds = d.getSeconds()*6;
+    var minutes = d.getMinutes()*6;
+    var hour = d.getHours()*30;
+
+    // rotate clock hands to the right current time.
+    document.getElementById("seconds-hand").style.transform = "rotate("+ seconds+ "deg)";
+    document.getElementById("minutes-hand").style.transform = "rotate("+ minutes+ "deg)";
+    document.getElementById("hours-hand").style.transform = "rotate("+ hour+ "deg)";
+    },1000
+  )
+
+  
+
      
 
     </script>
 
     <div class="container1" id="Home" >
         <div class="Half" id="firstHalf">
-            <div class="logo" id="logo">
-                <h2>welcome <br>To<br>My portfolio</h2>
+            <img class="mainImage" src="WhatsApp Image 2024-06-10 at 21.23.22_4893d42e.jpg" alt="">
+            <!-- clock that shows what time it is -->
+            <div class="clock">
+                  <div class="clock-center"></div>
+                  <p>mt</p>
+                    <div class="hours-container" id="hours-hand">
+                      <div class="hours"></div>
+                    </div>
+                    <div class="minutes-container" id="minutes-hand">
+                      <div class="minutes"></div>
+                    </div>
+                    <div class="seconds-container" id="seconds-hand">
+                      <div class="seconds"></div>
+                    </div>      
             </div>
+
+           
         </div>
         
-        <div class="Half">
+        <div class="Half" id="secondHalf" >
             <div class="manuBar" id="manu" > 
                 <ul>
                     <li><button onclick="gotoHome()">Home</button></li>
@@ -76,7 +108,7 @@
                 <div class="ptrofile" id="ptrofile">
                     <img src="whatsapp image 2023-11-23 at 17.57.34.jpeg" alt="profilepic">
                 </div>
-                <div>
+                <div class="">
                     <h1>Mugeri Thuso<p>software developer</p></h1> <br>
                     <div class="social">
                         <a href="https://www.linkedin.com/in/thuso-collen-mugeritc/">
@@ -85,9 +117,9 @@
                         <a href="mailto:mugerithuso@gmail.com">
                             <img src="4202011_email_gmail_mail_logo_social_icon.svg" alt="gmal" class="mail">
                         </a>
-                        <a href="professional modern CV resume.pdf" download  >
-                            <div class="downloads">Download CV </div>
-                        </a>
+
+                          <div class="cvButton"><a class="download-link"  href="professional modern CV resume.pdf" download  >Download CV</a></div>
+                       
                     </div>
                 </div>
                 
@@ -96,8 +128,10 @@
             
         </div>
 
-    </div>
-
+    </div> 
+    <br>
+   
+<!-- starting of blog code -->
     <div class="blog" id="Blog">
         
         <div class="box">
@@ -125,12 +159,16 @@
                            and system administrator; you're gaining a trusted ally who is committed 
                            to helping you succeed in the digital realm. Explore my services today and
                             unlock the full potential of your digital projects.
-            </p>   
+                </p>   
 
 
             </div>
         </div>
-
+    </div>
+    <br><br>
+    
+    <div class="projects">
+        
     </div>
     <div class="skilss" id="Skills">
         <div class="card">
@@ -138,7 +176,7 @@
                <div class="skillPic">
                 <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/google-code.png" alt="google-code"/>
                 </div>
-                <h3>web deverlopment</h3>
+                <h3>web development</h3>
             </div>
             <div class="skilText">
                 <p>
@@ -161,7 +199,7 @@
                <div class="skillPic">
                 <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/apple-app-store--v1.png" alt="apple-app-store--v1"/>
                 </div>
-                <h3>mobile app deverlopment</h3>
+                <h3>mobile app development</h3>
             </div>
             <div class="skilText">
                 <p>
