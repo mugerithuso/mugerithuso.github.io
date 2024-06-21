@@ -1,74 +1,49 @@
- // Your web app's Firebase configuration
- const firebaseConfig = {
-    apiKey: "AIzaSyAEJ1q0qyp2AlG1hSnCZSqFUFNJh_u90Pg",
-    authDomain: "my-web-8c1de.firebaseapp.com",
-    databaseURL: "https://my-web-8c1de-default-rtdb.firebaseio.com",
-    projectId: "my-web-8c1de",
-    storageBucket: "my-web-8c1de.appspot.com",
-    messagingSenderId: "693317968305",
-    appId: "1:693317968305:web:9645e9e77e0f710272dd90"
-  };
-
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
-  //reference database
-  const visitoresMG = firebase.database().ref('visitores');
-
-  document.getElementById('reply').addEventListener("submit", submitForm);
-
-
-  function submitForm(e) {
-   e.preventDefault();
-   
-   //getting variables from the form
-   var firstName = document.getElementById('firstName').value;
-   var Surname = document.getElementById('Surname').value;
-   var Email = document.getElementById('Email').value;
-   var Messege = document.getElementById('messege').value; 
-   var phone = document.getElementById('phoneNumber').value;
-
-   
-   if(firstName !="" && Surname !="" && Email !="" && Messege !="" && phone !="" ){
-      //saving data to the database
-      seveData(firstName,Surname,Email,Messege,phone);
-
-      //enebling success alert messege
-      document.getElementById("alert").style.display = "block";
-   //desable alert messege
-   setTimeout(() => {
-         document.getElementById("alert").style.display = "none";
-      }, 3000)
-   
-   
-   //reset the  form
-   document.getElementById('reply').reset()
-   }
-   else {
-
-      //eneble missing values alert messege
-      document.getElementById("missing").style.display = "block";
-
-      //desable alert messege
-      setTimeout(() => {
-         document.getElementById("missing").style.display = "none";
-      }, 2000)
-   }
+function openManu() {
+  document.getElementById("manu").classList.toggle("show");
 }
-  
 
-
-  const seveData = ( firstName,Surname,Email, Messege,   phone) => {
-   var newvisitoresMG = visitoresMG.push();
-
-   newvisitoresMG.set({
-       firstName: firstName,
-      Surname: Surname,
-      Email: Email,
-      Messege: Messege,
-      phoneNumber: phone, 
-
-   })
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("manu").classList.remove("miniHide");
+  } else {
+    document.getElementById("manu").classList.add("miniHide");
   }
+  prevScrollpos = currentScrollPos;
+};
 
- 
+function gotoHome() {
+  const element = document.getElementById("Home");
+  element.scrollIntoView({ behavior: "smooth" });
+}
+function gotoBlog() {
+  const element = document.getElementById("Blog");
+  element.scrollIntoView({ behavior: "smooth" });
+}
+function gotoSkills() {
+  const element = document.getElementById("Skills");
+  element.scrollIntoView({ behavior: "smooth" });
+}
+function gotoReply() {
+  const element = document.getElementById("reply");
+  element.scrollIntoView({ behavior: "smooth" });
+}
+
+// clock functions
+
+setInterval(function () {
+  var d = new Date(); // Get the local time using JS
+  var seconds = d.getSeconds() * 6;
+  var minutes = d.getMinutes() * 6;
+  var hour = d.getHours() * 30;
+
+  // rotate clock hands to the right current time.
+  document.getElementById("seconds-hand").style.transform =
+    "rotate(" + seconds + "deg)";
+  document.getElementById("minutes-hand").style.transform =
+    "rotate(" + minutes + "deg)";
+  document.getElementById("hours-hand").style.transform =
+    "rotate(" + hour + "deg)";
+}, 1000);
