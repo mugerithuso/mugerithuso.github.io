@@ -240,6 +240,7 @@
             I will get back to you if needs be.... <br /><br />
             <strong>Thank you for our feedback....!</strong>
           </p>
+         
         </div>
 
         <p class="missingValueAlert" id="missing">
@@ -247,7 +248,42 @@
         </p>
       </form>
 
-      icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <div class="commentsBox">
+      <h1>latest comments</h1>
+
+      <section class= "comment-card">
+      
+        <?php
+
+          $num = 5;
+
+          include_once("post.php");
+
+          if (empty($results)) {
+            echo "<div>
+
+            <h2>there is no comments yet</h2>
+            
+            </div>";
+
+          } else {
+            foreach ($results as $row) {
+            
+            echo htmlspecialchars($row["Surname"]);
+            echo htmlspecialchars($row["FirstName"]);
+            echo htmlspecialchars($row["Comments"]);
+            echo htmlspecialchars($row["Created_at"]);
+            }
+            
+          }
+
+        ?>
+    
+    
+            
+          </section>
+      </div>
+
       <button class="manuIcon" id="manubtn" onclick="openManu()">
         <img
           width="30"
@@ -272,7 +308,7 @@
           <img width="40" height="40" src="icons8-whatsapp.gif" />
         </a>
       </div>
-    </div>
+  </div>
 
     <script
       type="text/javascript"
