@@ -1,10 +1,10 @@
 <?php
-
+    
 
     try {
         require_once "includes/dbh.inc.php";
 
-        $query = " SELECT * FROM comments;";
+        $query = " SELECT * FROM `comments` ORDER BY `Created_at` DESC;";
 
         $stmt = $pdo->prepare($query);
 
@@ -19,5 +19,5 @@
     } catch (PDOExeption $e) {
         die("Query failed: " . $e->getMessage());
     }
-
+    
 

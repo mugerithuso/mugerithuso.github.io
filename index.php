@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="x-icon" href="vhageri.png" />
     <link rel="stylesheet" href="vhageri.css" />
+    <link rel="stylesheet" href="phoneScreen.css" />
     <title>Vhageri</title>
   </head>
 
   <body>
+
+<!-- intro section -->
     <div class="container1" id="Home">
       <div class="Half" id="firstHalf">
         <img
@@ -16,7 +19,7 @@
           src="WhatsApp Image 2024-06-10 at 21.23.22_4893d42e.jpg"
           alt="" />
 
-        <!-- clock that shows what time it is -->
+ <!-- clock section -->
         <div class="clock">
           <div class="clock-center"></div>
           <p>mt</p>
@@ -82,7 +85,7 @@
     </div>
     <br />
 
-    <!-- starting of blog code -->
+<!-- blog section -->
     <div class="blog" id="Blog">
       <div class="box">
         <div class="ptrofile">
@@ -115,8 +118,15 @@
       </div>
     </div>
     <br /><br />
+<!-- project section -->
+    <div  class="projects">
 
-    <div class="projects"></div>
+        <h3>Some of my rojects</h3>
+      
+
+
+</div>
+<!-- skills section  -->
     <div class="skilss" id="Skills">
       <div class="card">
         <div class="head">
@@ -193,9 +203,11 @@
         </div>
       </div>
     </div>
-    <div class="foot">
-      <form action="includes/formHandler.inc.php" method="post" id="reply" >
-        <h3>leave me a messege</h3>
+<!-- comment section  -->
+    <div class ="foot">
+     
+        <form action="includes/formHandler.inc.php" method="post" id="reply" >
+        <h3>LEAVE A COMMENT</h3>
         <p>FirstName:</p>
         <input
           type="text"
@@ -233,7 +245,7 @@
           placeholder="messege"
           name="comment"
           id="messege"></textarea>
-        <button id="submit" >Send</button>
+        <button id="submit" >post</button>
         <div class="alert" id="alert">
           <p>
             your messge is submited succesfully.<br />
@@ -246,42 +258,49 @@
         <p class="missingValueAlert" id="missing">
           Fill in missing all missing vallues...!!!
         </p>
-      </form>
-
-    <div class="commentsBox">
-      <h1>latest comments</h1>
-
-      <section class= "comment-card">
+       </form>
       
-        <?php
+      
 
-          $num = 5;
+      <div class="commentsBox">
+        <h1>latest comments</h1>
 
-          include_once("post.php");
+        <section class= "comment-card">
+        
+          <?php
 
-          if (empty($results)) {
-            echo "<div>
+            $num = 5;
 
-            <h2>there is no comments yet</h2>
-            
-            </div>";
+            include_once("post.php");
 
-          } else {
-            foreach ($results as $row) {
-            
-            echo htmlspecialchars($row["Surname"]);
-            echo htmlspecialchars($row["FirstName"]);
-            echo htmlspecialchars($row["Comments"]);
-            echo htmlspecialchars($row["Created_at"]);
+            if (empty($results)) {
+              echo "<div>
+              <h2 >there is no comments yet</h2>
+              </div>";
+
+            } else {
+              foreach ($results as $row) {
+              
+              $surname = htmlspecialchars($row["Surname"]);
+              $firstName = htmlspecialchars($row["FirstName"]);
+              $messege = htmlspecialchars($row["Comments"]);
+              $time = htmlspecialchars($row["Created_at"]);
+
+              echo"
+              <div>
+              <h3>$surname $firstName</h3>
+              <hr>
+              <p>$messege</p>
+              <h6>$time</h6>
+              </div>
+              ";
+              
+              }
+              
             }
-            
-          }
 
-        ?>
-    
-    
-            
-          </section>
+          ?>    
+        </section>
       </div>
 
       <button class="manuIcon" id="manubtn" onclick="openManu()">
@@ -307,12 +326,13 @@
         <a href="https://wa.me/qr/DP5NREXGBTZCJ1" target="whatsApp">
           <img width="40" height="40" src="icons8-whatsapp.gif" />
         </a>
-      </div>
-  </div>
+        
+          
+        </div>
+      
+    </div>
 
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    
     <script type="text/javascript" src="vhageri.js"></script>
   </body>
 </html>

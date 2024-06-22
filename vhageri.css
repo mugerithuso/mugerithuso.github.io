@@ -299,6 +299,16 @@ body {
   width: 100%;
   height: 67vh;
   background-color: #c99e11;
+  position: relative;
+  display: flex;
+}
+.projects h3 {
+  width:100%;
+  height: 3rem;
+  
+  justify-content: center;
+  align-items: center;
+  
 }
 
 /****************************Skills***********************/
@@ -351,6 +361,9 @@ body {
   display: flex;
   flex-direction: row;
   position: relative;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 34px;
  
 }
 .links {
@@ -364,12 +377,12 @@ body {
 .manuIcon {
   display: none;
 }
-form {
-  width: 50%;
+ form  {
+  height: 80%;
+  width: 34%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 54px;
   align-self: flex-start;
 }
 .formInput {
@@ -383,8 +396,8 @@ form {
 }
 form p {
   align-self: flex-start;
-  margin-top: 1em;
-  margin-bottom: 0px;
+  margin-top: 2px;
+  margin-bottom: 4px;
 }
 #messege {
   height: 200px;
@@ -398,17 +411,75 @@ form button {
   width: 100%;
   height: 39px;
   background-color: #17f8da;
-  border-radius: 9px;
+  border-radius: 3px;
   align-self: flex-start;
-  margin-top: 24px;
+  margin-top: 21px;
   color: whitesmoke;
   font-size: 18px;
   font-weight: bolder;
   text-decoration: underline;
 }
+form button:hover{
+  background-color: #15ff00;
+  border-color: #17f8da;
+}
 form h3 {
   color: #ffffff;
 }
+.commentsBox{
+  width: 50%;
+  height: 38rem;
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  
+}
+.commentsBox h1{
+  text-decoration: underline;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #050ec5;
+  text-shadow: 0px 1px 28px rgba(63, 137, 248, 0.918);
+  
+  
+}
+.comment-card{
+  background-color: rgb(255, 255, 255);
+  border: solid black;
+  overflow: scroll;
+  border-width: 4px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
+  
+}
+.comment-card div{
+  background-color: #ffffff;
+  box-shadow: 4px 7px 18px 2px rgba(0,0,0,0.74);
+  -webkit-box-shadow: 4px 7px 18px 2px rgba(0,0,0,0.74);
+  -moz-box-shadow: 4px 7px 18px 2px rgba(0,0,0,0.74);
+  width: fit-content;
+  color: #000;
+  margin: 10px;
+  padding: 4px;
+  position: relative;
+  left: 11px;
+  max-width: 65%;
+  
+}
+.comment-card div h3,p{
+  margin: 0;
+  padding-left: 4px;
+}
+.comment-card div h6{
+  margin: 2px;
+  color: #3b62e0;
+  text-align: end;
+}
+
 .alert {
   position: fixed;
   top: 25px;
@@ -431,108 +502,5 @@ form h3 {
   display: none;
   font-size: 18px;
 }
-.commentsBox{
-  width: 30%;
-  height: 100%;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-}
-.comment-card h1{
-  text-decoration: underline;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #000;
-  text-shadow: #d1ff03 ;
-}
 
-/********************************* mobile device******************************************/
 
-@media screen and (max-width: 800px) {
-  #manu {
-    top: 7px;
-    z-index: 5;
-  }
-  .container1 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-  }
-  .Half {
-    width: 100%;
-  }
-  #firstHalf {
-    position: relative;
-    display: flex;
-
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .manuBar {
-    display: none;
-  }
-  .manuBar ul {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
-  .manuBar ul li button {
-    color: whitesmoke;
-    margin: 15px;
-  }
-  .ppcontainer {
-    width: 90%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .manuIcon {
-    position: fixed;
-    top: 16px;
-    right: 12px;
-    display: block;
-    background-color: transparent;
-    border: none;
-  }
-  .show {
-    height: 40vh;
-    width: 30vh;
-    background-color: rgb(211, 169, 19);
-    position: fixed;
-    right: 12px;
-    display: flex;
-  }
-  .card {
-    width: 98%;
-  }
-  .blog {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding-top: 14px;
-    position: relative;
-  }
-  .box {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  .blogText p {
-    margin: 0px;
-    width: 100%;
-    text-align: left;
-  }
-  .blogPtofile {
-    margin-bottom: 14px;
-  }
-  .blogText {
-    width: 100%;
-    margin: 0;
-    padding-bottom: 18px;
-  }
-  .ptrofile {
-    margin: 18px;
-  }
-}
