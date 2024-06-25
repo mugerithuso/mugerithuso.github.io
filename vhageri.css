@@ -1,17 +1,18 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgba(2, 54, 114, 0.178);
 }
 .container1 {
   display: flex;
   flex-direction: row;
-  height: 38rem;
+  height: 40em;
   width: 100%;
 }
 .Half {
   display: flex;
   flex-direction: column;
-  height: 38rem;
+  height: 40em;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -195,6 +196,16 @@ body {
   border-radius: 100%;
   margin: 0;
 }
+.name{
+  font-family: "ADLaM Display", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  
+}
+.name p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+}
 .ppcontainer p {
   margin: 0px;
   font-size: 16px;
@@ -259,7 +270,7 @@ body {
 .blog {
   width: 100%;
   height: 23rem;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(2, 54, 114);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -297,37 +308,77 @@ body {
 /**************************projects*************************/
 .projects {
   width: 100%;
-  height: 67vh;
-  background-color: #c99e11;
+  height: 40em;
+  background-color: #30067c;
   position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .projects h3 {
-  width:100%;
-  height: 3rem;
-  
-  justify-content: center;
-  align-items: center;
-  
+  color: #ffffff;
+  font-style: oblique;
+  font-size: 24px;
+  font-family: cursive;
+
+}
+.project-box{
+  width: 70%;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 2em 1em;
+  grid-auto-flow: row dense; 
+}
+
+.one:hover{
+  box-shadow: 4px 7px 18px 2px rgb(204, 0, 255);
+}
+.two:hover{
+  box-shadow: 4px 7px 18px 2px rgb(4, 231, 247);
+}
+.three:hover{
+  box-shadow: 4px 7px 18px 2px rgb(24, 247, 4);
+}
+.four:hover{
+  box-shadow: 4px 7px 18px 2px rgb(247, 61, 4);
+
+}
+.project-box div{
+  height: 200px;
+  width: 100%;
+  background-color: #24035a;
+  border-radius: 30px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
 
 /****************************Skills***********************/
 
 .skilss {
+  min-height: 30em;
   height: auto;
-  width: 90%;
+  width: 100%;
+  background-color: #052555;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 12px;
+  
+  
 }
 .card {
   width: 25%;
   background-image: linear-gradient(
     to top,
     #052555,
-    #004e82,
+    #0a459c,
     #007aac,
     #00a9cf,
     #12d9eb
