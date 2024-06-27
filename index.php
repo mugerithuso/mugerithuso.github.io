@@ -9,7 +9,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=DM+Serif+Display:ital@0;1&family=Leckerli+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=DM+Serif+Display:ital@0;1&family=Leckerli+One&display=swap"
+     rel="stylesheet">
 
 
 
@@ -91,7 +92,7 @@
         </div>
       </div>
     </div>
-    <br />
+    
 
 <!-- blog section -->
     <div class="blog" id="Blog">
@@ -125,21 +126,45 @@
         </div>
       </div>
     </div>
-    <br /><br />
+    <br />
 <!-- project section -->
     <div  class="projects">
 
         <h3>Some of my rojects</h3>
         
 
-        <div class="project-box">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
-          <div class="four"></div>
+        <div class="project-box" id="project-box">
+          <div class="one">
+            <h4> Web Apps</h4>
+            <div><img width="68" height="68" src="https://img.icons8.com/isometric/50/web-design.png" alt="web-design"/></div>
+            <button>Veiw</button>
+          </div>
+          <div class="two">
+            <h4>mobile Apps</h4>
+            <div><img width="68" height="68" 
+              src="https://img.icons8.com/external-smashingstocks-isometric-smashing-stocks/55/external-mobile-app-internet-of-things-smashingstocks-isometric-smashing-stocks.png" 
+              alt="external-mobile-app-internet-of-things-smashingstocks-isometric-smashing-stocks"/>
+            </div>
+            <button>Veiw</button>
+          </div>
+          <div class="three">
+            <h4>Games</h4>
+            <div><img width="68" height="68"
+               src="https://img.icons8.com/color/48/controller.png"
+                alt="controller"/>
+              </div>
+            <button>Veiw</button>
+          </div>
+          <div class="four">
+            <h4>Other</h4>
+            <div><img width="78" height="78" src="https://img.icons8.com/3d-fluency/94/pencil-cup.png" alt="pencil-cup"/></div>
+            <button onclick="VewOthers()">View</button>
+          </div>
         </div>
+        <div class="display" id="display"></div>
 
     </div>
+    <br>
 <!-- skills section  -->
     <div class="skilss" id="Skills">
       <div class="card">

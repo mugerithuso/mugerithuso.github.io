@@ -162,7 +162,7 @@ body {
   height: 0px;
 }
 #secondHalf {
-  background-image: linear-gradient(to right bottom, #3be2f8, #062068);
+  background-color: rgb(2, 54, 114);
 }
 .ppcontainer {
   background-color: #ffffff;
@@ -195,6 +195,7 @@ body {
   height: inherit;
   border-radius: 100%;
   margin: 0;
+  object-fit: cover;
 }
 .name{
   font-family: "ADLaM Display", system-ui;
@@ -270,7 +271,7 @@ body {
 .blog {
   width: 100%;
   height: 23rem;
-  background-color: rgb(2, 54, 114);
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -301,7 +302,7 @@ body {
 .blogText p {
   margin: 6px;
   justify-items: center;
-  color: aliceblue;
+  color: rgb(2, 29, 53);
   overflow: hidden;
 }
 
@@ -309,7 +310,7 @@ body {
 .projects {
   width: 100%;
   height: 40em;
-  background-color: #30067c;
+  background-color: rgb(2, 54, 114);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -318,30 +319,35 @@ body {
 .projects h3 {
   color: #ffffff;
   font-style: oblique;
-  font-size: 24px;
+  font-size: 28px;
   font-family: cursive;
-
+  padding-inline: 5px;
+  
 }
+
+
 .project-box{
   width: 70%;
   display: grid; 
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr 1fr; 
-  gap: 2em 1em;
+  gap: 1em 1em;
   grid-auto-flow: row dense; 
+  margin-top: 12px;
+  position: relative;
 }
 
 .one:hover{
-  box-shadow: 4px 7px 18px 2px rgb(204, 0, 255);
+  box-shadow: 0px 0px 18px 5px rgb(204, 0, 255);
 }
 .two:hover{
-  box-shadow: 4px 7px 18px 2px rgb(4, 231, 247);
+  box-shadow: 0px 0px 18px 2px rgb(4, 231, 247);
 }
 .three:hover{
-  box-shadow: 4px 7px 18px 2px rgb(24, 247, 4);
+  box-shadow: 0px 0px 18px 5px rgb(24, 247, 4);
 }
 .four:hover{
-  box-shadow: 4px 7px 18px 2px rgb(247, 61, 4);
+  box-shadow: 0px 0px 18px 5px rgb(247, 61, 4);
 
 }
 .project-box div{
@@ -349,7 +355,54 @@ body {
   width: 100%;
   background-color: #24035a;
   border-radius: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  
 }
+.project-box div h4{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+.project-box div button{
+  margin-bottom: 12px;
+  width: 50%;
+  max-width: 150px;
+  height: 70px;
+  background-color: #1900a7d7;
+  color: #e7e7e7;
+  border: rgb(5, 5, 71) 2px solid;
+  border-radius: 10px;
+}
+.one button:hover{
+  border:rgb(204, 0, 255) 2px solid ;
+  color: rgb(204, 0, 255);
+}
+.two button:hover{
+  border:rgb(4, 231, 247) 2px solid ;
+  color: #12d9eb;
+}
+.three button:hover{
+  border:rgb(24, 247, 4) 2px solid ;
+  color: rgb(24, 247, 4);
+}
+.four button:hover{
+  border:rgb(247, 61, 4) 2px solid ;
+  color: rgb(247, 61, 4);
+}
+.display{
+  display: none;
+}
+.display2{
+  width: 70%;
+  height: 80%;
+  display: flex;
+  background-color: wheat;
+  position: relative;
+
+}
+
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -519,7 +572,7 @@ form h3 {
   position: relative;
   left: 11px;
   max-width: 65%;
-  
+  overflow-wrap: break-word;
 }
 .comment-card div h3,p{
   margin: 0;

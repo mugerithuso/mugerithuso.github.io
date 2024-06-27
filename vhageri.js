@@ -47,3 +47,8 @@ setInterval(function () {
   document.getElementById("hours-hand").style.transform =
     "rotate(" + hour + "deg)";
 }, 1000);
+
+function VewOthers(){
+  document.getElementById("project-box").style.display = "none";
+  document.getElementById("display").classList.add("display2");
+}
