@@ -1,11 +1,14 @@
 function openManu() {
-  document.getElementById("manu").classList.toggle("show");
+
+    document.getElementById("manu").classList.toggle("show");
+
 }
 
+
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
+var prevScrollpos = window.scrollY;
 window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
+  var currentScrollPos = window.scrollY;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("manu").classList.remove("miniHide");
   } else {
@@ -20,6 +23,10 @@ function gotoHome() {
 }
 function gotoBlog() {
   const element = document.getElementById("Blog");
+  element.scrollIntoView({ behavior: "smooth" });
+}
+function gotoProjects() {
+  const element = document.getElementById("projects");
   element.scrollIntoView({ behavior: "smooth" });
 }
 function gotoSkills() {
@@ -50,5 +57,10 @@ setInterval(function () {
 
 function VewOthers(){
   document.getElementById("project-box").style.display = "none";
-  document.getElementById("display").classList.add("display2");
+  document.getElementById("display").classList.toggle("display2");
 }
+function projectProV(){
+  document.getElementById("display").classList.toggle("display2");
+  document.getElementById("project-box").style.display = "grid";
+
+ }
